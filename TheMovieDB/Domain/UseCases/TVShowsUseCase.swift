@@ -10,7 +10,6 @@ import Foundation
 protocol TVShowsUseCase {
     func execute(
         requestValue: TVShowsUseCaseRequestValue,
-        cached: @escaping (TVShowsPage) -> Void,
         completion: @escaping (Result<TVShowsPage, Error>) -> Void
     ) -> Cancellable?
 }
@@ -26,12 +25,11 @@ final class DefaultTVShowsUseCasee: TVShowsUseCase {
 
     func execute(
         requestValue: TVShowsUseCaseRequestValue,
-        cached: @escaping (TVShowsPage) -> Void,
         completion: @escaping (Result<TVShowsPage, Error>) -> Void
     ) -> Cancellable? {
 
         return tvShowsRepository.fetchTVShowsList(
-            page: requestValue.page, cached: cached,
+            page: requestValue.page,
             completion: { result in
 
             if case .success = result { }

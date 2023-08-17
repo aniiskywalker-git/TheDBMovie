@@ -59,7 +59,7 @@ extension TVShowsResponseDTO.TVShowsDTO {
 }
 
 
-// MARK: - Private
+// MARK: - date formatter
 
 private let dateFormatter: DateFormatter = {
     let formatter = DateFormatter()

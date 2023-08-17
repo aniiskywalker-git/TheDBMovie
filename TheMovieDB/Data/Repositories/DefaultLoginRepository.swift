@@ -1,5 +1,5 @@
 //
-//  DefaultTVShowsRepository.swift
+//  DefaultLoginRepository.swift
 //  TheMovieDB
 //
 //  Created by Ana Victoria Frias.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-final class DefaultTVShowsRepository {
-
+final class DefaultLoginRepository {
+    
     private let dataTransferService: DataTransferService
     private let backgroundQueue: DataTransferDispatchQueue
 
@@ -21,24 +21,24 @@ final class DefaultTVShowsRepository {
     }
 }
 
-extension DefaultTVShowsRepository: TVShowsRepository {
-
-    func fetchTVShowsList(
-        page: Int,
-        completion: @escaping (Result<TVShowsPage, Error>) -> Void
+extension DefaultLoginRepository: LoginRepository {
+    
+    func fetchLogin(email: String,
+                    password: String,
+                    completion: @escaping (Result<Bool, Error>) -> Void
     ) -> Cancellable? {
-
-        let requestDTO = TVShowsRequestDTO(page: page)
+        let requestDTO = AuthRequestDTO(email: email, password: password)
         let task = RepositoryTask()
         
-        let endpoint = APIEndpoints.getTVShows(with: requestDTO, path: "3/tv/popular")
+        let endpoint = APIEndpoints.authentication(with: requestDTO)
+
         task.networkTask = dataTransferService.request(
             with: endpoint,
             on: backgroundQueue
         ) { result in
             switch result {
-            case .success(let responseDTO):
-                completion(.success(responseDTO.toDomain()))
+            case .success( _):
+                completion(.success(true))
             case .failure(let error):
                 completion(.failure(error))
             }

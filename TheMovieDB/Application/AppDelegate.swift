@@ -19,6 +19,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         AppAppearance.setupAppearance()
         
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let navigationController = UINavigationController()
+
+        window?.rootViewController = navigationController
+        appFlowCoordinator = AppFlowCoordinator(
+            navigationController: navigationController,
+            appDIContainer: appDIContainer
+        )
+        appFlowCoordinator?.start()
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

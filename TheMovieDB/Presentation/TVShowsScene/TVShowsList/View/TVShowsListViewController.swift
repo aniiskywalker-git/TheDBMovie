@@ -51,7 +51,7 @@ final class TVShowsListViewController: UIViewController, StoryboardInstantiable,
 extension TVShowsListViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        viewModel.didSelectItem(at: indexPath.row)
     }
     
 }

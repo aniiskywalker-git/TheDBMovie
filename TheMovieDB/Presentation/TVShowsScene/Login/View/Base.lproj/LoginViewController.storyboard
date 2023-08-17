@@ -47,6 +47,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                        <connections>
+                                            <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mb4-fy-8nU"/>
+                                        </connections>
                                     </button>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid username and password: You did not provide a valid login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pap-eJ-7oi">
                                         <rect key="frame" x="27.666666666666657" y="443" width="338" height="13.333333333333314"/>
@@ -88,10 +91,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="emailField" destination="U0R-Vk-0g1" id="7aK-h6-exz"/>
-                        <outlet property="errorMessageLabel" destination="Pap-eJ-7oi" id="D2p-3z-6C8"/>
-                        <outlet property="loginButton" destination="AN2-lr-cca" id="PiV-Jj-HVH"/>
-                        <outlet property="passwordField" destination="h1u-Sp-Loa" id="gkf-z5-zRP"/>
+                        <outlet property="emailField" destination="U0R-Vk-0g1" id="1o7-s3-c95"/>
+                        <outlet property="errorMessageLabel" destination="Pap-eJ-7oi" id="il1-QW-63i"/>
+                        <outlet property="loginButton" destination="AN2-lr-cca" id="jgr-d1-z7P"/>
+                        <outlet property="passwordField" destination="h1u-Sp-Loa" id="2L7-Zh-tpf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		184876D52A8ACA6D00A4F248 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184876D42A8ACA6D00A4F248 /* AppDelegate.swift */; };
 		184876D92A8ACA6D00A4F248 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184876D82A8ACA6D00A4F248 /* LoginViewController.swift */; };
-		184876DC2A8ACA6D00A4F248 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184876DA2A8ACA6D00A4F248 /* Main.storyboard */; };
+		184876DC2A8ACA6D00A4F248 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184876DA2A8ACA6D00A4F248 /* LoginViewController.storyboard */; };
 		184876DE2A8ACA6F00A4F248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184876DD2A8ACA6F00A4F248 /* Assets.xcassets */; };
 		184876E12A8ACA6F00A4F248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184876DF2A8ACA6F00A4F248 /* LaunchScreen.storyboard */; };
 		184876EC2A8ACA6F00A4F248 /* TheMovieDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184876EB2A8ACA6F00A4F248 /* TheMovieDBTests.swift */; };
@@ -55,6 +55,11 @@
 		1894F05D2A8CCBC0003D1A77 /* TVShowDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894F05C2A8CCBC0003D1A77 /* TVShowDetailViewModel.swift */; };
 		1894F0602A8CCC96003D1A77 /* TVShowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894F05F2A8CCC96003D1A77 /* TVShowCollectionViewCell.swift */; };
 		1894F0632A8CD083003D1A77 /* TVShowsResponseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894F0622A8CD083003D1A77 /* TVShowsResponseStorage.swift */; };
+		1894F06E2A8DCC85003D1A77 /* LoginSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894F06D2A8DCC85003D1A77 /* LoginSceneDIContainer.swift */; };
+		1894F0702A8DCED5003D1A77 /* DefaultLoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894F06F2A8DCED5003D1A77 /* DefaultLoginRepository.swift */; };
+		1894F0722A8DCF14003D1A77 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894F0712A8DCF14003D1A77 /* LoginRepository.swift */; };
+		1894F0742A8DE450003D1A77 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894F0732A8DE450003D1A77 /* LoginUseCase.swift */; };
+		1894F0762A8DE5A2003D1A77 /* LoginFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894F0752A8DE5A2003D1A77 /* LoginFlowCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +83,7 @@
 		184876D12A8ACA6D00A4F248 /* TheMovieDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMovieDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184876D42A8ACA6D00A4F248 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		184876D82A8ACA6D00A4F248 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		184876DB2A8ACA6D00A4F248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		184876DB2A8ACA6D00A4F248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginViewController.storyboard; sourceTree = "<group>"; };
 		184876DD2A8ACA6F00A4F248 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184876E02A8ACA6F00A4F248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		184876E22A8ACA6F00A4F248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,6 +132,11 @@
 		1894F05C2A8CCBC0003D1A77 /* TVShowDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailViewModel.swift; sourceTree = "<group>"; };
 		1894F05F2A8CCC96003D1A77 /* TVShowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowCollectionViewCell.swift; sourceTree = "<group>"; };
 		1894F0622A8CD083003D1A77 /* TVShowsResponseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowsResponseStorage.swift; sourceTree = "<group>"; };
+		1894F06D2A8DCC85003D1A77 /* LoginSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneDIContainer.swift; sourceTree = "<group>"; };
+		1894F06F2A8DCED5003D1A77 /* DefaultLoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoginRepository.swift; sourceTree = "<group>"; };
+		1894F0712A8DCF14003D1A77 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		1894F0732A8DE450003D1A77 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		1894F0752A8DE5A2003D1A77 /* LoginFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlowCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +234,7 @@
 			children = (
 				1848770A2A8ACD6700A4F248 /* AppDIContainer.swift */,
 				1848770E2A8ACDC600A4F248 /* TVShowsSceneDIContainer.swift */,
+				1894F06D2A8DCC85003D1A77 /* LoginSceneDIContainer.swift */,
 			);
 			path = DIContainer;
 			sourceTree = "<group>";
@@ -328,7 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				184876D82A8ACA6D00A4F248 /* LoginViewController.swift */,
-				184876DA2A8ACA6D00A4F248 /* Main.storyboard */,
+				184876DA2A8ACA6D00A4F248 /* LoginViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -347,6 +358,7 @@
 		188E67462A8CA045008E8E15 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				1894F06F2A8DCED5003D1A77 /* DefaultLoginRepository.swift */,
 				188E676A2A8CAE9C008E8E15 /* DefaultTVShowsRepository.swift */,
 				188E676C2A8CB2E9008E8E15 /* DefaultPosterImagesRepository.swift */,
 				188E676E2A8CB3DE008E8E15 /* Utils */,
@@ -409,6 +421,7 @@
 		188E67732A8CB752008E8E15 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				1894F0732A8DE450003D1A77 /* LoginUseCase.swift */,
 				188E67742A8CB78B008E8E15 /* TVShowsUseCase.swift */,
 				188E67762A8CB79D008E8E15 /* Protocol */,
 			);
@@ -434,6 +447,7 @@
 		188E677B2A8CBB32008E8E15 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				1894F0712A8DCF14003D1A77 /* LoginRepository.swift */,
 				188E677C2A8CBB9E008E8E15 /* TVShowsRepository.swift */,
 				188E67812A8CBC1E008E8E15 /* PosterImagesRepository.swift */,
 			);
@@ -460,6 +474,7 @@
 			isa = PBXGroup;
 			children = (
 				1894F04C2A8CC27C003D1A77 /* TVShowsFlowCoordinator.swift */,
+				1894F0752A8DE5A2003D1A77 /* LoginFlowCoordinator.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -639,7 +654,7 @@
 				1894F0512A8CC2A1003D1A77 /* TVShowsList.storyboard in Resources */,
 				184876E12A8ACA6F00A4F248 /* LaunchScreen.storyboard in Resources */,
 				184876DE2A8ACA6F00A4F248 /* Assets.xcassets in Resources */,
-				184876DC2A8ACA6D00A4F248 /* Main.storyboard in Resources */,
+				184876DC2A8ACA6D00A4F248 /* LoginViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,10 +703,12 @@
 				188E678C2A8CC022008E8E15 /* Alertable.swift in Sources */,
 				188E67752A8CB78B008E8E15 /* TVShowsUseCase.swift in Sources */,
 				1894F05D2A8CCBC0003D1A77 /* TVShowDetailViewModel.swift in Sources */,
+				1894F0702A8DCED5003D1A77 /* DefaultLoginRepository.swift in Sources */,
 				188E676B2A8CAE9C008E8E15 /* DefaultTVShowsRepository.swift in Sources */,
 				1848770D2A8ACD9000A4F248 /* AppAppearance.swift in Sources */,
 				184877082A8ACD4100A4F248 /* AppFlowCoordinator.swift in Sources */,
 				188E67372A8C9C65008E8E15 /* NetworkConfig.swift in Sources */,
+				1894F0722A8DCF14003D1A77 /* LoginRepository.swift in Sources */,
 				188E67862A8CBF3F008E8E15 /* Observable.swift in Sources */,
 				184877062A8ACD2900A4F248 /* AppConfigurations.swift in Sources */,
 				188E67292A8C7E1F008E8E15 /* SceneDelegate.swift in Sources */,
@@ -702,9 +719,12 @@
 				1894F04D2A8CC27C003D1A77 /* TVShowsFlowCoordinator.swift in Sources */,
 				188E673E2A8C9CB1008E8E15 /* NetworkService.swift in Sources */,
 				188E67352A8C9AAC008E8E15 /* LoginViewModel.swift in Sources */,
+				1894F0762A8DE5A2003D1A77 /* LoginFlowCoordinator.swift in Sources */,
 				188E674C2A8CA67C008E8E15 /* AuthRequestDTO+Mapping.swift in Sources */,
 				188E678A2A8CBF81008E8E15 /* LoadingView.swift in Sources */,
 				188E67582A8CAC6E008E8E15 /* TVShowsResponseDTO+Mapping.swift in Sources */,
+				1894F06E2A8DCC85003D1A77 /* LoginSceneDIContainer.swift in Sources */,
+				1894F0742A8DE450003D1A77 /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,12 +761,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		184876DA2A8ACA6D00A4F248 /* Main.storyboard */ = {
+		184876DA2A8ACA6D00A4F248 /* LoginViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				184876DB2A8ACA6D00A4F248 /* Base */,
 			);
-			name = Main.storyboard;
+			name = LoginViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		184876DF2A8ACA6F00A4F248 /* LaunchScreen.storyboard */ = {
@@ -888,7 +908,7 @@
 				INFOPLIST_FILE = TheMovieDB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -918,7 +938,7 @@
 				INFOPLIST_FILE = TheMovieDB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

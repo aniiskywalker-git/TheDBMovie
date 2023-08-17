@@ -11,6 +11,7 @@ struct TVShowsListViewModelActions {
     let showTVShowDetails: (TVShow) -> Void
 }
 
+/// In order to retreive new pages
 enum TVShowsListViewModelLoading {
     case fullScreen
     case nextPage
@@ -53,7 +54,7 @@ final class DefaultTVShowsListViewModel: TVShowsListViewModel {
     let error: Observable<String> = Observable("")
     //TODO: add if is empty
     //var isEmpty: Bool { return items.value.isEmpty }
-    let screenTitle = NSLocalizedString("Movies", comment: "")
+    let screenTitle = NSLocalizedString("TV Shows", comment: "")
     let errorTitle = NSLocalizedString("Error", comment: "")
     
     init(

@@ -8,7 +8,7 @@
 import UIKit
 
 final class TVShowsSceneDIContainer: TVShowsFlowCoordinatorDependencies {
-    
+
     struct Dependencies {
         let apiDataTransferService: DataTransferService
         let imageDataTransferService: DataTransferService
@@ -30,8 +30,7 @@ final class TVShowsSceneDIContainer: TVShowsFlowCoordinatorDependencies {
     // MARK: - Repositories
     func makeTVShowsRepository() -> TVShowsRepository {
         DefaultTVShowsRepository(
-            dataTransferService: dependencies.apiDataTransferService,
-            cache: TVShowsResponseCache // TODO: Cache not defined yet
+            dataTransferService: dependencies.apiDataTransferService
         )
     }
 
@@ -57,13 +56,13 @@ final class TVShowsSceneDIContainer: TVShowsFlowCoordinatorDependencies {
     }
     
     // MARK: - TV Shows Details
-    /*func makeTVShowsDetailsViewController(TVShow: TVShow) -> UIViewController {
+    /*func makeTVShowsDetailViewController(tvShow: TVShow) -> UIViewController {
         TVShowsDetailViewController.create(
             with: makeTVShowsDetailsViewModel(movie: movie)
         )
-    }
+    }*/
     
-    func makeTVShowsDetailsViewModel(tvShow: TVShow) -> TVShowDetailViewModel {
+    /*func makeTVShowsDetailsViewModel(tvShow: TVShow) -> TVShowDetailViewModel {
         DefaultMovieDetailsViewModel(
             tvShow: tvShow,
             posterImagesRepository: makePosterImagesRepository()
@@ -72,7 +71,7 @@ final class TVShowsSceneDIContainer: TVShowsFlowCoordinatorDependencies {
 
 
     // MARK: - Flow Coordinators
-    func makeTVShowsSearchFlowCoordinator(navigationController: UINavigationController) -> TVShowsFlowCoordinator {
+    func makeTVShowsFlowCoordinator(navigationController: UINavigationController) -> TVShowsFlowCoordinator {
         TVShowsFlowCoordinator(
             navigationController: navigationController,
             dependencies: self

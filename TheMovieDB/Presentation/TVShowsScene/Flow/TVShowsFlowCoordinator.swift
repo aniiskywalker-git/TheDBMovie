@@ -11,7 +11,7 @@ protocol TVShowsFlowCoordinatorDependencies  {
     func makeTVShowsListViewController(
         actions: TVShowsListViewModelActions
     ) -> TVShowsListViewController
-    func makeTVShowsDetailViewController(tvShow: TVShow) -> UIViewController
+    //func makeTVShowsDetailViewController(tvShow: TVShow) -> UIViewController
 }
 
 final class TVShowsFlowCoordinator {
@@ -37,7 +37,7 @@ final class TVShowsFlowCoordinator {
     }
 
     private func showTVShowsDetails(tvShow: TVShow) {
-        let vc = dependencies.makeTVShowsDetailViewController(tvShow: tvShow)
-        navigationController?.pushViewController(vc, animated: true)
+        /*let vc = dependencies.makeTVShowsDetailViewController(tvShow: tvShow)
+        navigationController?.pushViewController(vc, animated: true)*/
     }
 }

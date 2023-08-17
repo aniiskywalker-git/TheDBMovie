@@ -17,3 +17,9 @@ struct AuthResponseDTO: Decodable {
     let statusCode: Int
     let statusMessage: String
 }
+
+extension AuthResponseDTO {
+    func toDomain() -> Bool {
+        return success
+    }
+}

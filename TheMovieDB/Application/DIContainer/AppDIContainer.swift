@@ -12,7 +12,7 @@ final class AppDIContainer {
     lazy var appConfiguration = AppConfiguration()
     
     // MARK: - Network
-    /*lazy var apiDataTransferService: DataTransferService = {
+    lazy var apiDataTransferService: DataTransferService = {
         let config = ApiDataNetworkConfig(
             baseURL: URL(string: appConfiguration.apiBaseURL)!,
             queryParameters: [
@@ -33,11 +33,18 @@ final class AppDIContainer {
     }()
     
     // MARK: - DIContainers of scenes
-    func makeMoviesSceneDIContainer() -> MoviesSceneDIContainer {
-        let dependencies = MoviesSceneDIContainer.Dependencies(
+    func makeLoginSceneDIContainer() -> LoginSceneDIContainer {
+        let dependencies = LoginSceneDIContainer.Dependencies(
+            apiDataTransferService: apiDataTransferService
+        )
+        return LoginSceneDIContainer(dependencies: dependencies)
+    }
+    
+    func makeTVShowsSceneDIContainer() -> TVShowsSceneDIContainer {
+        let dependencies = TVShowsSceneDIContainer.Dependencies(
             apiDataTransferService: apiDataTransferService,
             imageDataTransferService: imageDataTransferService
         )
-        return MoviesSceneDIContainer(dependencies: dependencies)
-    }*/
+        return TVShowsSceneDIContainer(dependencies: dependencies)
+    }
 }
